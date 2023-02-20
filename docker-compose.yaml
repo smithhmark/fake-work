@@ -1,0 +1,12 @@
+services:
+  data:
+    build:
+      context: ./data
+      dockerfile: Dockerfile
+    image: work/data:local
+
+  search:
+    build:
+      context: ./search
+      dockerfile: Dockerfile
+    image: work/search:local
